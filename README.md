@@ -20,9 +20,7 @@
 
 ### 步骤 ###
 
-* 登陆/新建github账号，回到本项目页面，点击右上角fork本项目的代码到到你自己的仓库，
-
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/fork.png)
+* 登陆/新建github账号，回到本项目页面，点击右上角fork本项目的代码到到你自己的仓库
   
 * 根据原文教程获取应用id+机密（自己复制保存），并修改你自己项目里的1.txt。（不要改1.py）
   
@@ -37,20 +35,13 @@
   CONFIG_KEY
   ```shell
   secret=r'你的应用机密'
-  ```
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/机密.png)
+  ``
   
-* 进入你的个人设置页面(右上角头像 Settings，不是仓库里的 Settings)，选择 Developer settings > Personal access tokens > Generate new token,
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/Settings.png)
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/token.png)
+* 进入你的个人设置页面(右上角头像 Settings，不是仓库里的 Settings)，选择 Developer settings > Personal access tokens > Generate new token
 
   设置名字为GITHUB_TOKEN , 然后勾选 repo , admin:repo_hook , workflow 等选项，最后点击Generate token即可。
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/repo.png)
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/adminrepo.png)
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/workflow.png)
   
 * 点击右上角星星/star立马调用一次，再点击上面的Action就能看到每次的运行日志（都看下，api有没有调用到位，有没有出错）
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/日志.png)
 
 * 没出错的话，就搞定啦，接下来就不用管了。（下面看不懂就不用管啦）
 
@@ -58,11 +49,7 @@
 
   · 定时自动启动修改地方：（在.github/workflow/autoapi.yml文件里，自行百度cron定时任务格式）
    
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/定时.png)
-   
   · 每次轮数修改地方：（在1.py最后面）
-   
-  ![image](https://github.com/wangziyingwen/ImageHosting/blob/master/AutoApi/次数.png)
   
 ------------------------------------------------------------
 ### 题外话 ###
